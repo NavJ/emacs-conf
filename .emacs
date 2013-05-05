@@ -26,3 +26,6 @@
 
 ;; SML mode
 (load "~/.emacs.d/sml.el")
+
+;; OCaml mode
+(load "~/.emacs.d/ocaml.el")
