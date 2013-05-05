@@ -1,3 +1,10 @@
+;; No splash screen!
+(setq inhibit-startup-message t)
+
+;; Change scratch screen's defaults
+(setq initial-scratch-message nil)
+(setq initial-major-mode 'text-mode)
+
 ;; Stop making the ~ and # files
 ;(setq make-backup-files nil)
 ;(setq auto-save-default nil)
