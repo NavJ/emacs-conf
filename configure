@@ -8,6 +8,7 @@ cp ~/.emacs ~/.emacs.old
 cp -r ~/.emacs.d ~/.emacs.d.old
 
 echo "Copying new config..."
+rm -rf ~/.emacs ~/.emacs.d
 cp -r ./.emacs ./.emacs.d ~
 
 echo "Completed! Enjoy your newly configured Emacs :)"
