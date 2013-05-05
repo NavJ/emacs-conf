@@ -24,6 +24,11 @@
 ;; Remove trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; add fill column at column 80 (instead of default 70)
+(setq-default fill-column 80)
+
+(setq python-indent 2)
+
 ;; SML mode
 (load "~/.emacs.d/sml.el")
 
