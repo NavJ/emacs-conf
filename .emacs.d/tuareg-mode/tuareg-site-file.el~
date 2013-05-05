@@ -1,0 +1,1 @@
+;;; tuareg-site-file.el --- Automatically extracted autoloads.\n;;; Code:\n(add-to-list 'load-path\n             (or (file-name-directory load-file-name) (car load-path)))\n
