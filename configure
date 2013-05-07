@@ -1,16 +1,33 @@
 #!/bin/bash
 
+if [ "$DISPLAY" ]
+then
+    echo "Display found! Configuring URxvt in addition to Emacs."
+else
+    echo "No display found: Skipping URxvt settings."
+fi
+
 echo "Deleting old backups..."
 rm -rf ~/.emacs.old ~/.emacs.d.old
+if [ "$DISPLAY" ]
+then
+    rm ~/.Xresources.old
+fi
 
 echo "Backing up current config..."
 mv ~/.emacs ~/.emacs.old
 mv ~/.emacs.d ~/.emacs.d.old
-mv ~/.Xresources ~/.Xresources_old
+if [ "$DISPLAY" ]
+then
+    mv ~/.Xresources ~/.Xresources.old
+fi
 
 echo "Copying new config..."
 cp -r ./.emacs ./.emacs.d ~
-cp ./.Xresources ~
-xrdb -override ~/.Xresources
+if [ "$DISPLAY" ]
+then
+    cp ./.Xresources ~
+    xrdb -override ~/.Xresources
+fi
 
 echo "Completed! Enjoy your newly configured Emacs :)"
