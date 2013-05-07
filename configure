@@ -27,7 +27,7 @@ cp -r ./.emacs ./.emacs.d ~
 if [ "$DISPLAY" ]
 then
     cp ./.Xresources ~
-    xrdb -override ~/.Xresources
+    xrdb -merge ~/.Xresources
 fi
 
 echo "Completed! Enjoy your newly configured Emacs :)"
