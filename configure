@@ -30,4 +30,4 @@ then
     xrdb -merge ~/.Xresources
 fi
 
-echo "Completed! Enjoy your newly configured Emacs :)"
+echo "Completed! Enjoy your new configuration. :)"
