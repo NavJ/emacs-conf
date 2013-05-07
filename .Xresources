@@ -41,7 +41,9 @@ URxvt.scrollWithBuffer: false
 URxvt.scrollTtyKeypress: false
 URxvt.scrollTtyOutput: false
 
-URxvt.perl-ext-common: default,clipboard
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher: chromium
+URxvt.url-select.underline: true
 
 ! Font stuff
 URxvt.letterSpace: 0
