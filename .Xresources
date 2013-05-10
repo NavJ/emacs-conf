@@ -4,38 +4,43 @@ URxvt.secondaryWheel: true
 
 URxvt.modifier: mod1
 
-!black
-URxvt.color0:  #000000
-URxvt.color8:  #2B2B2B
-!red
-URxvt.color1:  #A5372E
-URxvt.color9:  #E06C5C
-!green
-URxvt.color2:  #4A663C
-URxvt.color10: #7B996C
-!yellow
-URxvt.color3:  #7C5618
-URxvt.color11: #B38849
-!blue
-URxvt.color4:  #566060
-URxvt.color12: #889393
-!magenta
-URxvt.color5:  #8E4948
-URxvt.color13: #C67C78
-!cyan
-URxvt.color6:  #6D5B42
-URxvt.color14: #A28D73
-!white
-URxvt.color7:  #8D8D8D
-URxvt.color15: #C6C6C6
+! --- special colors ---
+*background: #0c0c0c
+*foreground: #b5b5b5
 
-! Colored man pages (green, gray, blue)
-!URxvt.colorIT: #7B996C
-!URxvt.colorBD: #C6C6C6
-!URxvt.colorUL: #889393
-
-URxvt.background: #111111
-URxvt.foreground: 15
+! --- standard colors ---
+! black
+*color0: #0c0c0c
+! bright_black
+*color8: #2e2e2e
+! red
+*color1: #9b3d30
+! bright_red
+*color9: #ca6153
+! green
+*color2: #309b3d
+! bright_green
+*color10: #53ca61
+! yellow
+*color3: #8f9b30
+! bright_yellow
+*color11: #bcca53
+! blue
+*color4: #3d309b
+! bright_blue
+*color12: #6153ca
+! magenta
+*color5: #9b308f
+! bright_magenta
+*color13: #ca53bc
+! cyan
+*color6: #308f9b
+! bright_cyan
+*color14: #53bcca
+! white
+*color7: #9a9a9a
+! bright_white
+*color15: #b5b5b5
 
 URxvt.scrollWithBuffer: false
 URxvt.scrollTtyKeypress: false
