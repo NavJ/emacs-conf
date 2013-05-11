@@ -1,6 +1,9 @@
 ;; No splash screen!
 (setq inhibit-startup-message t)
 
+;; No menu bar
+(menu-bar-mode nil)
+
 ;; Change scratch screen's defaults
 (setq initial-scratch-message nil)
 (setq initial-major-mode 'text-mode)
@@ -36,6 +39,14 @@
 (setq-default fill-column 80)
 
 (setq python-indent 2)
+
+;; Some colors...
+(set-face-attribute 'font-lock-comment-face nil :foreground "red")
+(set-face-attribute 'linum nil :foreground "green")
+(set-face-attribute 'shadow nil :foreground "green")
+(set-face-attribute 'menu nil
+                    :foreground "black"
+                    :background "white")
 
 ;; SML mode
 (load "~/.emacs.d/sml.el")
