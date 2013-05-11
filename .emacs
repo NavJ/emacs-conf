@@ -12,6 +12,7 @@
 ;; Show line/column numbers on the bottom
 (global-linum-mode 1)
 (column-number-mode 1)
+(setq linum-format "%4d\u2502")
 
 ;; Use spaces, not tabs (setq-default means it can be
 ;; overridden by defaults in other modes)
