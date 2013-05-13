@@ -2,7 +2,7 @@
 (setq inhibit-startup-message t)
 
 ;; No menu bar
-(menu-bar-mode nil)
+(menu-bar-mode -1)
 
 ;; Change scratch screen's defaults
 (setq initial-scratch-message nil)

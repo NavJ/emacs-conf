@@ -1,5 +1,15 @@
 #!/bin/bash
 
+if [ $SHELL="/bin/bash" ]; then
+    echo "Bash shell found! Updating .bashrc."
+    rm -rf ~/.bashrc.old
+    mv ~/.bashrc ~/.bashrc.old
+    cp ./.bashrc ~
+    . ~/.bashrc
+else
+    echo "Non-bash shell found, skipping .bashrc update."
+fi
+
 if [ "$DISPLAY" ]
 then
     echo "Display found! Configuring URxvt in addition to Emacs."
