@@ -1,7 +1,7 @@
 URxvt.saveLines: 12000
 URxvt.scrollBar: false
 URxvt.secondaryWheel: true
-
+URxvt.geometry: 85x28
 URxvt.modifier: mod1
 
 ! --- special colors ---
