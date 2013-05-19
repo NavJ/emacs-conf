@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $SHELL="/bin/bash" ]; then
+if [ $SHELL = "/bin/bash" ]; then
     echo "Bash shell found! Updating .bashrc."
     rm -rf ~/.bashrc.old
     mv ~/.bashrc ~/.bashrc.old
